@@ -1,5 +1,5 @@
 
-let pokédex = new PokeCollection()
+let pokedex = new PokeCollection()
 let actualPage;
 
 loadNextPage();
@@ -35,11 +35,13 @@ function loadPreviousPage() {
 
 function displayPokedex() {
     const pokemonList = document.getElementById('pokemonList');
- 
+    
 
-    for (let i = 0; i < pokédex.pokemonArray.length; i++) {
-        const pokemon = pokédex.pokemonArray[i];
+    for (let i = 0; i < pokedex.pokemonArray.length; i++) {
+        const pokemon = pokedex.pokemonArray[i]; 
         console.log(pokemon);
+       <span></span> 
+       
     }
 }
 
