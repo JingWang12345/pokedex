@@ -44,21 +44,21 @@ function displayPokedex() {
     for (let i = 0; i < pokedex.pokemonArray.length; i++) {
         const pokemon = pokedex.pokemonArray[i]; 
         
-        // const pokeListElement = document.createElement('li');
+        const pokeListElement = document.createElement('li');
 
-        // const pokeNameH3 = document.createElement('h3');
+        const pokeNameH3 = document.createElement('h3');
 
-        // const nameNode = document.createTextNode(pokemon.name);
+        const nameNode = document.createTextNode(pokemon.name);
 
-        // pokeNameH3.appendChild(nameNode);
+        pokeNameH3.appendChild(nameNode);
 
-        // pokeListElement.appendChild(pokeNameH3);
+        pokeListElement.appendChild(pokeNameH3);
 
-        // pokemonList.appendChild(pokeListElement);
+        pokemonList.appendChild(pokeListElement);
 
-        const htmlString = `<li><h3>${pokemon.name}</h3></li>`
+        // const htmlString = `<li><h3>${pokemon.name}</h3></li>`
 
-        pokemonList.innerHTML += htmlString;
+        // pokemonList.innerHTML += htmlString;
        
     }
 }
